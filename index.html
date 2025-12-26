@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praniti Kubal | Backend & AI Engineer</title>
+
+    <title>Praniti Kubal — Backend Engineer | Python, Machine Learning, AI-Integrated Systems</title>
+
+    <!-- Google Fonts (FIXED) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
-        
+        html {
+            font-size: 15px;
+        }
+
         body {
             background-color: #080808;
             color: #d1d5db;
             font-family: 'Plus Jakarta Sans', sans-serif;
             line-height: 1.6;
         }
+
         .font-mono { font-family: 'Fira Code', monospace; }
         .text-pink { color: #fb7185; }
         .bg-pink { background-color: #fb7185; }
-        
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #080808; }
@@ -34,7 +48,11 @@
             color: #9ca3af;
             font-size: 1rem;
         }
-        .nav-link:hover { color: #fb7185; padding-left: 10px; }
+
+        .nav-link:hover {
+            color: #fb7185;
+            padding-left: 10px;
+        }
 
         .project-card {
             background: #111111;
@@ -44,6 +62,7 @@
             justify-content: space-between;
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
+
         .project-card:hover {
             border-color: #fb7185;
             transform: translateY(-5px);
@@ -55,6 +74,7 @@
         }
     </style>
 </head>
+
 <body class="bg-[#080808]">
 
     <aside class="sidebar fixed left-0 top-0 h-screen bg-[#0a0a0a] border-r border-white/5 p-10 flex flex-col justify-between z-50 hidden lg:flex">
