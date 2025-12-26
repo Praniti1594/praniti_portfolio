@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praniti Kubal | Backend & AI Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
+        
+        body {
+            background-color: #080808;
+            color: #d1d5db;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+        }
+        .font-mono { font-family: 'Fira Code', monospace; }
+        .text-pink { color: #fb7185; }
+        .bg-pink { background-color: #fb7185; }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #080808; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #fb7185; }
+
+        .nav-link {
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            color: #9ca3af;
+            font-size: 1rem;
+        }
+        .nav-link:hover { color: #fb7185; padding-left: 10px; }
+
+        .project-card {
+            background: #111111;
+            border: 1px solid #222;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .project-card:hover {
+            border-color: #fb7185;
+            transform: translateY(-5px);
+        }
+
+        @media (min-width: 1024px) {
+            .main-content { margin-left: 320px; }
+            .sidebar { width: 320px; }
+        }
+    </style>
+</head>
+<body class="bg-[#080808]">
+
+    <aside class="sidebar fixed left-0 top-0 h-screen bg-[#0a0a0a] border-r border-white/5 p-10 flex flex-col justify-between z-50 hidden lg:flex">
+        <div>
+            
+
+            <nav class="space-y-6 font-bold">
+                <a href="#projects" class="nav-link"><span class="text-pink font-mono text-sm">01</span> PROJECTS</a>
+                <a href="#skills" class="nav-link"><span class="text-pink font-mono text-sm">02</span> SKILLS</a>
+                <a href="#experience" class="nav-link"><span class="text-pink font-mono text-sm">03</span> EXPERIENCE</a>
+                <a href="#achievements" class="nav-link"><span class="text-pink font-mono text-sm">04</span> ACHIEVEMENTS</a>
+                <a href="#education" class="nav-link"><span class="text-pink font-mono text-sm">05</span> EDUCATION</a>
+            </nav>
+        </div>
+
+        <div class="space-y-8">
+    <div class="flex gap-6 text-gray-400">
+        <a href="mailto:pranitikubal9@gmail.com" class="hover:text-pink transition" title="Email Me">
+            <i data-lucide="mail" size="24"></i>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/praniti-kubal-44057928b" target="_blank" class="hover:text-pink transition" title="LinkedIn Profile">
+            <i data-lucide="linkedin" size="24"></i>
+        </a>
+        
+        <a href="https://github.com/Praniti1594" target="_blank" class="hover:text-pink transition" title="GitHub Profile">
+            <i data-lucide="github" size="24"></i>
+        </a>
+        
+        <!-- <a href="Praniti_Kubal_Resume.pdf" download class="hover:text-pink transition" title="Download Resume">
+            <i data-lucide="download" size="24"></i>
+        </a> -->
+    </div>
+    
+</div>
+    </aside>
+
+    <main class="main-content min-h-screen px-8 lg:px-20">
+        
+        <section class="py-24 lg:py-40 border-b border-white/5">
+       
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-white mb-6 tracking-tight">Praniti Kubal.</h1>
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-400 mb-8">Backend Engineer</h2>
+            <p class="text-xl lg:text-2xl text-gray-400 max-w-3xl leading-relaxed">
+               Backend Engineer specializing in Python, Machine Learning, and AI-integrated systems. Experienced in building enterprise-grade APIs, RBAC workflows, analytics platforms, and production-ready ML services.
+            </p>
+        </section>
+
+<section id="projects" class="py-24 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-white mb-12 flex items-center gap-4">
+               Projects
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="project-card p-8 rounded-2xl">
+                    <div class="flex flex-col h-full">
+                        <div class="flex justify-between mb-6">
+                            <i data-lucide="shield-check" class="text-pink" size="32"></i>
+                            
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">Enterprise Expense Compliance</h3>
+                        <p class="text-pink text-lg mb-4 font-bold">Python • FastAPI / Flask • MySQL • Docker</p>
+                        <p class="text-gray-200 text-lg mb-6 font-bold">Enterprise-grade backend for tracking expenses and enforcing spending policies via automated workflows.</p>
+                        <ul class="text-xl text-gray-200 space-y-3 flex-grow">
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Implemented<b>RBAC</b>for Employees, Managers, and Admins.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Built multi-level <b>approval workflows</b> for reimbursements.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Developed a <b>policy evaluation engine</b> to detect violations.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Optimized SQL for team-level spend summaries & trends.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Containerized with <b>Docker Compose</b> for reproducibility.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card p-8 rounded-2xl">
+                    <div class="flex flex-col h-full">
+                        <div class="flex justify-between mb-6">
+                            <i data-lucide="line-chart" class="text-pink" size="32"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">SmartSpend – Finance Analyzer</h3>
+                        <p class="text-pink text-lg mb-4 font-bold">FastAPI • Tesseract OCR • OpenCV • Pandas</p>
+                        <p class="text-gray-200 text-lg mb-6 font-bold"> Full-stack personal finance analysis system that extracts, categorizes, and analyzes
+            spending data from bank statements (CSV) and receipt images to provide visual insights,
+            trend analysis, and basic spending predictions</p>
+                        <ul class="text-xl text-gray-200 space-y-3 flex-grow">
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Built APIs to handle <b>CSV uploads and receipt ingestion</b>.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Implemented <b>OCR pipeline</b> to extract text from scanned receipts.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Applied <b>NLP & Regex</b> to automatically categorize expense data.</li>
+            
+                            <li class="flex gap-3"><span class="text-pink">▹</span>Implemented trend analysis and basic monthly expense predictions using historical spending data.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card p-8 rounded-2xl">
+                    <div class="flex flex-col h-full">
+                        <div class="flex justify-between mb-6">
+                            <i data-lucide="calendar-days" class="text-pink" size="32"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">AI Conversational Scheduler</h3>
+                        <p class="text-pink text-lg mb-4 font-bold">FastAPI • LangChain • Gemini API • G-Cal</p>
+                        <p class="text-gray-200 text-lg mb-6 font-bold">AI assistant converting natural language inputs into structured Google Calendar events.</p>
+                        <ul class="text-xl text-gray-200 space-y-3 flex-grow">
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Built conversational backend using <b>LangChain</b>.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Integrated <b>Gemini API</b> for natural language understanding.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Connected <b>Google Calendar API</b> for automated event creation.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> NLP intent parsing for date, time, and meeting context.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Streamlit frontend for end-to-end user interaction.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card p-8 rounded-2xl">
+                    <div class="flex flex-col h-full">
+                        <div class="flex justify-between mb-6">
+                            <i data-lucide="message-square" class="text-pink" size="32"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">ML Sentiment Analysis</h3>
+                        <p class="text-pink text-lg mb-4 font-bold">Python • Flask • scikit-learn • TF-IDF</p>
+                        <p class="text-gray-200 text-lg mb-6 font-bold">ML system predicting movie review sentiment via a specialized REST API endpoint.</p>
+                        <ul class="text-xl text-gray-200 space-y-3 flex-grow">
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Trained <b>Logistic Regression, Naive Bayes, and SVM</b> models.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Text cleaning, stopword removal, and <b>TF-IDF normalization</b>.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Finalized Logistic Regression for fast inference and accuracy.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Built a Flask <b>/predict API</b> for real-time predictions.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Postman-ready API architecture for testing and deployment.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card p-8 rounded-2xl">
+                    <div class="flex flex-col h-full">
+                        <div class="flex justify-between mb-6">
+                            <i data-lucide="lock" class="text-pink" size="32"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3 tracking-tight">CyberSecure Encryption</h3>
+                        <p class="text-pink text-lg mb-4 font-bold">Flask • React • AES-CBC • SHA-256</p>
+                        <p class="text-gray-200 text-lg mb-6 font-bold">Cybersecurity web app for secure file handling with robust key-based access control.</p>
+                        <ul class="text-xl text-gray-200 space-y-3 flex-grow">
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Implemented <b>AES (CBC mode)</b> for secure file protection.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Used <b>SHA-256 hashing</b> for key generation and validation.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Enforced <b>key-based access control</b> for decryption workflows.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Built Flask APIs for secure cryptographic operations.</li>
+                            <li class="flex gap-3"><span class="text-pink">▹</span> Integrated React frontend for file upload interaction.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-24 scroll-mt-20 border-t border-white/5">
+            <h2 class="text-4xl font-bold text-white mb-16 flex items-center gap-4">
+               Technical Skills
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <h4 class="text-pink font-bold text-lg uppercase tracking-widest border-b border-pink/20 pb-2">Backend & APIs</h4>
+                    <p class="text-xl text-gray-300 leading-relaxed font-medium text-lg">FastAPI, Flask, Django, REST APIs, Authentication (RBAC)</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-pink font-bold text-lg uppercase tracking-widest border-b border-pink/20 pb-2">Databases</h4>
+                    <p class="text-xl text-gray-300 leading-relaxed font-medium text-lg">MySQL, PostgreSQL, MongoDB</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-pink font-bold text-lg uppercase tracking-widest border-b border-pink/20 pb-2">AI / ML & Data</h4>
+                    <p class="text-xl text-gray-300 leading-relaxed font-medium text-lg">Scikit-learn, NLP, OCR (Tesseract), Pandas, NumPy</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-24 scroll-mt-20 border-t border-white/5">
+            <h2 class="text-4xl font-bold text-white mb-16 flex items-center gap-4">
+                Experience
+            </h2>
+            <div class="space-y-16">
+                <div class="relative pl-10 border-l-2 border-pink/30">
+                    <div class="absolute -left-[11px] top-0 w-[20px] h-[20px] rounded-full bg-[#080808] border-4 border-pink"></div>
+                    <div class="flex justify-between items-start mb-2 flex-wrap gap-4">
+                        <h4 class="text-2xl font-bold text-white">Python Backend Developer (Intern)</h4>
+                        <span class="text-pink font-mono font-bold text-lg">Nov 2024 – Jan 2025</span>
+                    </div>
+                    <p class="text-xl font-bold text-gray-400 mb-6 uppercase tracking-wider">Infosys Springboard</p>
+                    <ul class="text-xl text-gray-250 space-y-4 max-w-3xl leading-relaxed">
+                        <li>▹ Designed and implemented scalable RESTful APIs using Flask and MySQL for course and user management systems.
+</li>
+                        <li>▹Built authentication and authorization workflows with Role-Based Access Control (RBAC) for admin, instructor, and learner roles.
+</li>
+                        <li>▹Developed backend services for course modules, quizzes, enrollments, performance and notifications with proper request validation and error handling.
+ </li>
+                         <li>▹ Optimized database schema and SQL queries to improve performance and ensure data integrity.
+</li>
+                          <li>▹ Implemented backend support for an admin analytics dashboard to track enrollments and system usage.
+</li>
+                    </ul>
+                </div>
+                
+                <div class="relative pl-10 border-l-2 border-pink/30">
+                    <div class="absolute -left-[11px] top-0 w-[20px] h-[20px] rounded-full bg-[#080808] border-4 border-pink"></div>
+                    <div class="flex justify-between items-start mb-2 flex-wrap gap-4">
+                        <h4 class="text-2xl font-bold text-white">Open Source Contributor</h4>
+                        <span class="text-pink font-mono font-bold text-lg">2025</span>
+                    </div>
+                    <p class="text-xl font-bold text-gray-400 mb-6 uppercase tracking-wider">WiEP (Ethereum Protocol) Cohort 4</p>
+                    <ul class="text-xl text-gray-250 space-y-4 max-w-3xl leading-relaxed">
+                        <li>▹ Contributing to the Ethereum execution specifications through reviewed and merged pull requests.</li>
+                        <li>▹ Worked with maintainers following open-source contribution workflows, including code reviews.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="py-24 scroll-mt-20 border-t border-white/5">
+            <h2 class="text-4xl font-bold text-white mb-16 flex items-center gap-4">
+                 Achievements
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div class="p-8 bg-[#111] rounded-2xl border-l-4 border-pink">
+                    <p class="text-white font-extrabold text-xl mb-2">Winner</p>
+                    <p class="text-gray-400 text-xl">Avalon Hackathon 2025</p>
+                </div>
+                <div class="p-8 bg-[#111] rounded-2xl border-l-4 border-pink">
+                    <p class="text-white font-extrabold text-xl mb-2">Selected</p>
+                    <p class="text-gray-400 text-xl">WiEP Ethereum Cohort 4</p>
+                </div>
+            <div class="p-8 bg-[#111] rounded-2xl border-l-4 border-pink">
+  <p class="text-white font-extrabold text-xl mb-2">Hands-on Learning</p>
+  <p class="text-gray-400 text-xl">Google Cloud — 60+ Labs Completed</p>
+</div>
+
+            </div>
+        </section>
+
+        <section id="education" class="py-24 mb-32 scroll-mt-20 border-t border-white/5">
+            <h2 class="text-4xl font-bold text-white mb-16 flex items-center gap-4">
+                 Education
+            </h2>
+            <div class="space-y-12 max-w-4xl text-lg">
+                <div class="flex justify-between items-end border-b-2 border-white/5 pb-6">
+                    <div>
+                        <h4 class="font-bold text-white text-2xl mb-2">B.E. in Computer Engineering</h4>
+                        <p class="text-pink text-xl">Terna Engineering College</p>
+                    </div>
+                    <p class="text-gray-400 font-mono font-bold text-2xl">CGPA: 8.48</p>
+                </div>
+                <div class="flex justify-between items-end border-b-2 border-white/5 pb-6">
+                    <div>
+                        <h4 class="font-bold text-white text-2xl mb-2">Higher Secondary (PCM + CS)</h4>
+                        <p class="text-pink text-xl">B.N. Bandodkar College</p>
+                    </div>
+                    <p class="text-gray-400 font-mono font-bold text-2xl">88.5%</p>
+                </div>
+
+                <div class="flex justify-between items-end border-b-2 border-white/5 pb-6">
+                    <div>
+                        <h4 class="font-bold text-white text-2xl mb-2">Secondary School</h4>
+                        <p class="text-pink text-xl">Saraswati Vidyalaya High School</p>
+                    </div>
+                    <p class="text-gray-400 font-mono font-bold text-2xl">94.8%</p>
+                </div>
+
+
+                
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
